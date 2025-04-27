@@ -1,0 +1,24 @@
+{
+  "name": "book-search-engine",
+  "version": "1.0.0",
+  "description": "A book search engine using GraphQL and Apollo Server",
+  "main": "server/server.ts",
+  "scripts": {
+    "start": "cd server && npm start",
+    "develop": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "install": "cd server && npm install && cd ../client && npm install",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "mern",
+    "books"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
